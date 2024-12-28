@@ -1,0 +1,265 @@
+
+.landing-header {
+  position: relative;
+  background-image: url('../../../assets/images/team_work.png'); 
+  background-size: cover; 
+  background-position: center; 
+  height: 60vh; 
+  width: 100vw; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0; 
+  padding: 0; 
+  overflow: hidden; 
+}
+
+.logo-container {
+  position: absolute;
+  top: 1rem; 
+  left: 2rem; 
+  z-index: 10;
+}
+
+.logo-container img {
+  height: 50px; 
+  object-fit: contain;
+}
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.landing-header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.landing-header p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.register-now {
+  background-color: #ac1554;
+  color: white;
+  padding: 0.6rem 1.7rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: .9rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.register-now:hover {
+  background-color: #d478ff;
+}
+
+
+.courses-header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  margin-bottom: 1rem;
+}
+
+.courses-header h2 {
+  font-size: 2rem;
+  color: #000000;
+  margin-right: .1rem;
+  margin-left: 5rem;
+}
+
+
+.view-more {
+  background-color: #ac1554;
+  color: white;
+  padding: 0.4rem 1.6rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.button-mid {
+  background-color: #ac1554;
+  color: white;
+  padding: 0.7rem 2rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 5rem;
+}
+
+.button-mid:hover {
+  background-color: #d478ff;
+}
+
+
+.courses {
+  margin-bottom: 3rem;
+  margin-top: 4rem;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.courses-header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  width: 100%; 
+  max-width: 1200px; 
+  margin-bottom: 3rem; 
+  padding: 0 1rem; 
+  box-sizing: border-box;
+}
+
+.courses h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #000000;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: .2rem; 
+  padding: 1rem;
+  width: 100%; 
+  max-width: 1200px;
+  box-sizing: border-box; 
+}
+
+.course-card {
+  background: white;
+  padding: .2rem;
+  text-align: center;
+}
+
+.course-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.course-card h3 {
+  font-size: 1.5rem;
+  color: #000000;
+  margin-bottom: 1rem;
+  align-self: flex-start;
+}
+
+.price {
+  font-size: 1.2rem;
+  color: #ac1554;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.register-btn {
+  background-color: #ac1554;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: #357abd;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.contact-us {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: rgb(250, 184, 98);
+    border-radius: 3em;
+    padding-inline: 10rem;
+}
+
+.contact-us h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #000000;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #000000;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+}
+
+input, textarea {
+    width: 70%; 
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+textarea {
+    height: 70px;
+    resize: vertical;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.submit-btn {
+    width: 30%;
+    background-color: #ac1554;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: .8rem;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #d478ff;
+}
+
+@media (max-width: 768px) {
+    .contact-us {
+        padding-inline: 2rem;
+    }
+
+    input, textarea {
+        width: 100%;
+    }
+}

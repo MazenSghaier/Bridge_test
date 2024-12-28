@@ -1,0 +1,47 @@
+<div class="landing-container">
+    <div class="logo-container">
+        <img src="../../../assets/images/LogoBridge.png" alt="The Bridge Logo">
+    </div>
+    <header class="landing-header">
+        <div class="overlay">
+            <h1>Improve your skills on your own</h1>
+            <p>To prepare for a better future</p>
+            <button class="register-now">REGISTER NOW</button>
+        </div>
+    </header>
+
+    <section class="courses">
+        <div class="courses-header">
+            <h2>Discover Our Courses</h2>
+            <button class="button-mid">View More</button>
+          </div>
+        <div class="course-grid">
+            <div *ngFor="let course of courses" class="course-card">
+                <img [src]="course.image" alt="{{ course.title }}">
+                <h3>{{ course.title }}</h3>
+                <p class="price">{{ course.price }}</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-us">
+        <h2>Contact Us</h2>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label>NAME</label>
+                <input type="text" placeholder="Jiara Martins" formControlName="name" required >
+            </div>
+            <div class="form-group">
+                <label>EMAIL</label>
+                <input type="email" placeholder="hello@reallygreatsite.com" formControlName="email" required>
+            </div>
+            <div class="form-group">
+                <label>MESSAGE</label>
+                <textarea formControlName="message" placeholder="Write your message here"></textarea>
+            </div>
+            <div class="button-container">
+                <button type="submit" class="submit-btn">Send the message</button>
+            </div>
+        </form>
+    </section>
+</div>
